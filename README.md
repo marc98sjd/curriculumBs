@@ -1,0 +1,2 @@
+# curriculumBs
+Curriculum personal MGE
