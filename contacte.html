@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Curriculum MGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='estilo.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body class="bg-light">
+        <div class="row text-center">
+          <div class="col"></div>
+          <div class="col-10">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/icon.svg" alt="Logo" style="width:40px;">
+                MARC GUERRA EXPOSITO
+              </a>
+              <ul class="navbar-nav" style="width: 65%">
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Serveis</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active aparte">
+                  <a href="contacte.html" class="nav-link">Contacte</a>
+                </li>
+              </ul>
+            </nav> 
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Nom</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Sisplau introdueix el teu nom" required="required" data-error="El nom es obligatori">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Cognom</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Introdueix el teu cognom." required="required" data-error="El cognom es obligatori.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Correu</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Sisplau introdueix el teu correu." required="required" data-error="Has d'introduir un correu vàlid.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Telèfon</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Sisplau introdueix un telefon">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Missatge</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Missatge per mi" rows="4" required="required" data-error="Sisplau, deixa'm un missatge abans d'enviar el formulari de contacte."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Enviar missatge">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="validator.js"></script>
+        <script src="contact.js"></script>
+    </body>
+</html>
